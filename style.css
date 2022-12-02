@@ -1,0 +1,224 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    font-family:'Manrope', sans-serif;
+    
+    background-image: url(https://images.unsplash.com/photo-1514723831556-c6377511171c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+h1,h2,h3,p{
+    margin: 0;
+    text-align: center;
+}
+h1{
+    padding: 20px;
+}
+h2{
+    width: 100%;
+}
+h3{
+    font-size: 20px;
+}
+img{
+    width: calc(30%);
+    margin: 10px;
+}
+input{
+    margin-top: 50px;
+}
+header{   
+    background-color: black;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: top;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: rgb(139, 168, 89);
+}
+.all{
+    background-color: rgba(0, 0, 0, 0.799);
+    width: calc(70%);
+    position: relative;
+    left: calc(15%);
+    top: 20px;
+    border-radius: 20px;
+}
+.part1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: rgb(139, 168, 89);
+    position: static;
+}
+
+.part2{
+    position: relative;
+}
+.maintxt_part2{
+    color: rgb(52, 67, 26);
+    font-size: 30px;
+    font-family:'Manrope', sans-serif;
+    width: 100%; 
+    color: rgb(139, 168, 89);
+
+}
+.bg{
+    /* background-color: rgb(68, 99, 14); */
+    height: 90px;
+    /* width: calc(50%); */
+    margin: 0px;
+    text-align: center;
+    display: flex;
+}
+.main{
+    border-radius: 20px;
+    /* height: 600px; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(139, 168, 89);
+    font-size: 40px;
+    padding: 100px;
+    margin-left: calc(10%);
+    margin-right: calc(10%);
+}
+.line{
+    font-size: 30px;  
+    font-family: 'Manrope', sans-serif;;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    border-bottom: solid;
+    color: rgb(139, 168, 89);
+    width: calc(30%);
+    top: calc(25%);
+    left: calc(35%);
+}
+.logo{
+    width: 70px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.search{
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+}
+.search_btn{
+    width: 100px;
+    height: 57px;
+    border-radius: 30px;
+    border: 2px solid rgb(52, 67, 26);
+    background-color:rgb(139, 168, 89) ;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.search_btn:hover{
+    background-color: rgb(52, 67, 26); 
+    color: white;
+}
+.search_btn:active{
+    background-color: rgb(139, 168, 89);
+}
+::placeholder{
+    font-family:'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 20px;
+}
+.change_picture{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    border: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(139, 168, 89);
+    font-size: 150px;
+    top: 150px;
+    left: -80px;
+    z-index: 3;
+}
+.change_picture:hover{
+    color: rgb(52, 67, 26);
+}
+.change_picture:active{
+    color: rgb(139, 168, 89);
+}
+.right{
+    z-index: 2;
+    left: calc(90% + 80px);
+}
+
+.row{
+    position: initial;
+    left: 20%;
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    top: 100px;
+    margin-top: 50px;
+
+}
+.column:first-child{
+    margin-left: 0;
+}
+.column{
+    /* background-color: rgba(188, 228, 120, 0.677); */
+    width: calc(20%);
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(139, 168, 89);
+    border: 2px solid;
+    position: relative;
+}
+.discription{
+    position: absolute;
+    top: 50%;
+    margin: 40px;
+    color: rgb(91, 111, 56);
+}
+.icons{
+    position: absolute;
+    width: 30%;
+    top: 50px;
+    left: 90px;
+}
+h3{
+    margin: 10px;
+}
+.our_frogs{
+    
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.froggy_header{
+    color: rgb(139, 168, 89);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+.assortment{
+    display: inline-block;
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+}
