@@ -22,10 +22,7 @@ h2{
 h3{
     font-size: 20px;
 }
-img{
-    width: calc(30%);
-    margin: 10px;
-}
+
 input{
     margin-top: 50px;
 }
@@ -203,9 +200,7 @@ h3{
     margin: 10px;
 }
 .our_frogs{
-    
     margin-top: 50px;
-    width: 100%;
     text-align: center;
 }
 .froggy_header{
@@ -217,8 +212,20 @@ h3{
 }
 .assortment{
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.row_jabas{
+    display: flex;
+}
+.item{
     background-color: #fff;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     margin: 30px;
+    border-radius: 10px;
+}
+.frogs{
+    margin: 0;
+    width: 50%;
 }
