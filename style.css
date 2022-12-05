@@ -2,12 +2,10 @@ body{
     font-family: sans-serif;
     margin: 0;
     font-family:'Manrope', sans-serif;
-    
     background-image: url(https://images.unsplash.com/photo-1514723831556-c6377511171c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 h1,h2,h3,p{
     margin: 0;
@@ -18,9 +16,11 @@ h1{
 }
 h2{
     width: 100%;
+    color: rgb(139, 168, 89);
 }
 h3{
     font-size: 20px;
+    margin: 10px;
 }
 
 input{
@@ -37,6 +37,30 @@ header{
     color: rgb(139, 168, 89);
 
 }
+a{
+    text-decoration: none;
+    margin: 30px;
+}
+a:visited{
+    color: rgb(139, 168, 89);
+}
+.up{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.799);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    color: rgb(139, 168, 89);
+    font-size: 100px;
+}
+.up_link{
+    margin: 0;
+}
 .all{
     background-color: rgba(0, 0, 0, 0.799);
     width: calc(70%);
@@ -44,6 +68,11 @@ header{
     left: calc(15%);
     top: 20px;
     border-radius: 20px;
+}
+.right_part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .part1{
     position: relative;
@@ -60,12 +89,9 @@ header{
     position: relative;
 }
 .maintxt_part2{
-    color: rgb(52, 67, 26);
     font-size: 30px;
     font-family:'Manrope', sans-serif;
     width: 100%; 
-    color: rgb(139, 168, 89);
-
 }
 .bg{
     /* background-color: rgb(68, 99, 14); */
@@ -200,17 +226,16 @@ header{
     top: 50px;
     left: 90px;
 }
-h3{
-    margin: 10px;
-}
+
 .our_frogs{
     margin-top: 50px;
     text-align: center;
+    font-size: 30px;
+    font-family:'Manrope', sans-serif;
 }
 .froggy_header{
     color: rgb(139, 168, 89);
     font-weight: bold;
-    font-size: 40px;
     text-align: center;
     width: 100%;
 }
@@ -235,7 +260,7 @@ h3{
     height: 200px;
 }
 .cart{
-    margin: 30px;
+    margin: 10px;
     width: 200px;
     height: 50px;
     background-color: rgb(139, 168, 89);
@@ -249,4 +274,32 @@ h3{
 }
 .cart:active{
     background-color:  rgb(139, 168, 89);
+}
+.news_all{
+    font-size: 30px;
+    font-family:'Manrope', sans-serif;
+}
+.bg1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1502930986035-54cd2d74d7cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80);
+}
+.bg2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1604984938695-709c41f45cf1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=509&q=80);   
+}
+.bg3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80);   
+}
+.bg4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1523761222194-6e470a351e71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=337&q=80);   
+}
+.news{
+    border-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+}
+.news_p{
+    font-size: 20px;
 }
