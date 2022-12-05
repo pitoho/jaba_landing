@@ -30,11 +30,12 @@ header{
     background-color: black;
     display: flex;
     height: 100px;
-    justify-content: center;
-    align-items: top;
+    justify-content:space-between;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     color: rgb(139, 168, 89);
+
 }
 .all{
     background-color: rgba(0, 0, 0, 0.799);
@@ -68,11 +69,14 @@ header{
 }
 .bg{
     /* background-color: rgb(68, 99, 14); */
-    height: 90px;
+    height: 110px;
     /* width: calc(50%); */
     margin: 0px;
     text-align: center;
     display: flex;
+}
+.your_cart{
+    margin-right: 60px;
 }
 .main{
     border-radius: 20px;
@@ -96,7 +100,7 @@ header{
     border-bottom: solid;
     color: rgb(139, 168, 89);
     width: calc(30%);
-    top: calc(25%);
+    top: 260px;
     left: calc(35%);
 }
 .logo{
@@ -227,5 +231,22 @@ h3{
 }
 .frogs{
     margin: 0;
-    width: 50%;
+    width: 200px;
+    height: 200px;
+}
+.cart{
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(139, 168, 89);
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+}
+.cart:hover{
+    background-color: rgb(52, 67, 26);
+}
+.cart:active{
+    background-color:  rgb(139, 168, 89);
 }
