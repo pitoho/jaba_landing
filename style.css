@@ -21,6 +21,7 @@ h2{
 h3{
     font-size: 20px;
     margin: 10px;
+    /* width: 70%; */
 }
 
 input{
@@ -40,6 +41,7 @@ header{
 a{
     text-decoration: none;
     margin: 30px;
+    color: rgb(139, 168, 89);
 }
 a:visited{
     color: rgb(139, 168, 89);
@@ -188,43 +190,41 @@ a:visited{
 
 .row{
     position: initial;
-    left: 20%;
     width: 100%;
     /* background-color: white; */
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
     border-radius: 30px;
     top: 100px;
     margin-top: 50px;
+    justify-content: center;
 
 }
-.column:first-child{
-    margin-left: 0;
+.pluses{
+    position: absolute;
+    left: 5%;
+    top: 5%;
 }
 .column{
-    /* background-color: rgba(188, 228, 120, 0.677); */
-    width: calc(20%);
     height: 400px;
-    margin-left: 50px;
     border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: rgb(139, 168, 89);
     border: 2px solid;
     position: relative;
+    margin: 0px 20px 0px 20px;
 }
 .discription{
     position: absolute;
+    left: 10%;
     top: 50%;
-    margin: 40px;
-    color: rgb(91, 111, 56);
+    width: 80%;
+    color: rgb(108, 142, 99);
 }
 .icons{
     position: absolute;
-    width: 30%;
-    top: 50px;
-    left: 90px;
+    width: 25%;
+    top: 23%;
+    left: 35%;
 }
 
 .our_frogs{
@@ -291,17 +291,26 @@ a:visited{
 .bg4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1523761222194-6e470a351e71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=337&q=80);   
 }
+.bg5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1521217155737-0d5632e9813f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+.bg6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.518)), url(https://images.unsplash.com/photo-1576223205620-0e3aeaa1a84c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
 .news{
     border-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    display: inline-block;
     font-size: 30px;
     padding: 20px;
 }
 .news_p{
     font-size: 20px;
+}
+.line_news{
+    width: 70%;
+    margin: 30px;
 }
 footer{
     display: flex;
