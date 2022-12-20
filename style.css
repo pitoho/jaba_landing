@@ -28,6 +28,7 @@ input{
     margin-top: 50px;
 }
 header{   
+    width: 100%;
     background-color: black;
     display: flex;
     height: 100px;
@@ -45,6 +46,9 @@ a{
 }
 a:visited{
     color: rgb(139, 168, 89);
+}
+.jaba_icon{
+    margin: 0;
 }
 .up{
     width: 100px;
@@ -216,15 +220,26 @@ a:visited{
 .discription{
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 60%;
     width: 80%;
-    color: rgb(108, 142, 99);
+    color: rgb(139, 168, 89);
+}
+.column::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    border-bottom: 3px solid;
+    left: 30%;
+    top: 50%;
+}
+.column::after:nth-child(4){
+    top: 50%;
 }
 .icons{
     position: absolute;
     width: 25%;
-    top: 23%;
-    left: 35%;
+    top: 25%;
+    left: 37%;
 }
 
 .our_frogs{
@@ -241,9 +256,10 @@ a:visited{
     font-size: 30px;
 }
 .assortment{
-    display: inline-block;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(2,450px);
 }
 .row_jabas{
     display: flex;
@@ -318,10 +334,10 @@ a:visited{
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(3,auto);
+    justify-content: center;
 }
 .review{
     width: 400px;
-    margin: 10px;
     height: 500px;
     border-radius: 40px;
 }
@@ -358,6 +374,7 @@ footer{
     grid-template-rows: repeat(3,auto);
     justify-items: center;
     align-items: center;
+    margin: 5%;
 }
 .photo{
     background-image: url(https://telegra.ph/file/14eaec38c9d87be079cf8.png);
@@ -369,8 +386,147 @@ footer{
 .user{
     color: #8BA859;
     font-size: 30px;
-    margin: 0;
+    margin: 20px;
 }
 .p{
     font-size: 15px;
+}
+@media screen and ( min-width: 320px) and (max-width: 1920px){
+    header{
+       font-size: 20px; 
+    }
+    h1{
+        margin-top: 10px;
+    }
+    .search{
+        width: 300px;
+    }
+    .line::after{
+        border-bottom: 0px;
+    }
+    .row{
+        grid-template-columns: repeat(3, 300px);
+        margin-left: 0px;
+    }
+    .column::after{
+        border-bottom: 0px;
+    }
+    .news{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .item{
+        margin: 20px;
+    }
+    .reviews{
+        grid-template-columns: repeat(2,450px);
+        grid-template-rows: repeat(2,600px);
+    }
+    footer{
+        height: 80px;
+        font-size: 10px;
+    }
+
+}
+@media screen and ( min-width: 320px) and (max-width: 1280px){
+    header{
+        font-size: 11px; 
+        height: 80px;
+    }
+    h1{
+        margin-top: 22px;
+    }
+    .search{
+        width: 250px;
+    }
+    .row{
+        grid-template-columns: repeat(1, 300px);
+        margin: 0px;
+    }
+    .column{
+        margin: 20px;
+    }
+    .reviews{
+        grid-template-columns: repeat(1,450px);
+        grid-template-rows: repeat(3,600px);
+    }
+    .assortment{
+        grid-template-columns: repeat(1,450px);
+    }
+    footer{
+        height: 60px;
+        font-size: 7px;
+    }
+}
+@media screen and ( min-width: 200px) and (max-width: 770px){
+    .up{
+        width: 70px;
+        height: 70px;
+        font-size: 70px;
+    }
+    header{
+        font-size: 15px;
+    }
+    a{
+        margin: 10px;
+    }
+    h1{
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .jaba_icon{
+        width: 30%;
+    }
+    .search{
+        width: 250px;
+    }
+    footer{
+        font-size: 6px;
+        height: 50px;
+    }
+}
+@media screen and ( min-width: 200px) and (max-width: 480px){
+    .logo{
+        margin-left: 10px;
+        margin-top: 30px;
+        width: 100%;
+        height: 50%;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .line{
+        font-size: 20px;
+    }
+    .item,.review{
+        width: 250px;
+        height: 450px;
+        margin-left: 22%;
+    }
+    .reviews{
+        grid-template-rows: repeat(3,700px);
+    }
+    header{
+        height: 70px;
+        font-size: 7px;
+    }
+    .froggy_header{
+        font-size: 10px;
+    }
+    footer{
+
+        font-size: 3px;
+    }
+    .up{
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        right: 40px;
+    }
 }
